@@ -86,7 +86,7 @@ class App extends React.Component {
           <List listTitle="Diseño estructural"
                 objectToList={this.state.data} />
           <button onClick={this.addCharacters} disabled={!this.state.btn_value}>
-            Más!!
+            Mostrar más personajes
           </button>
         </div>
       );
