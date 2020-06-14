@@ -17,7 +17,11 @@ const ListItem=(props)=>{
                 </div>
                 <div>
                     <h3>Spice: {character_item.species}</h3>
-                    <h3>Type: {character_item.type}</h3>
+                    {
+                        !character_item.type==""
+                            ?<h3>Type: {character_item.type}</h3>
+                            :""
+                    }
                     <h3>Gender: {character_item.gender}</h3>
                     <h3>Status: {character_item.status}</h3>
                 </div>
